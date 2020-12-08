@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+*{
+box-sizing: border-box;
+
+}
+:root{
+    --primary-font: 'Julius Sans One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --color1: #FFFF00;
+    --color2: 	#DCDCDC
+}
+body{
+
+     height: 99vh;
+     margin: 0;
+    padding: 0;
+
+}
+main{
+    display: flex;
+    flex-direction: row;
+       justify-content: space-between;
+    background: #FFFF00;
+
+}
+.side-img{
+    height: 39.7vw;
+    width: 45vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 10px;
+    background: var(--color1);
+    padding: 0 5%;
+    margin: 1vw;
+
+}
+.box1{
+    background: white;
+    background-image: url(../image/drawingSketch21.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box2{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+       font-family: var(--secondary-font);
+
+}
+.box2:hover{
+    opacity: 0.5;
+    font-family: var(--secondary-font);
+    transition: 0.5s ease;
+}
+.tc{
+     font-size: 30px;
+     text-align: center;
+
+}
+.box3{
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.box3:hover{
+    opacity: 0.5;
+    font-family: var(--secondary-font);
+    transition: 0.5s ease;
+}
+.dc{
+     font-size: 30px;
+    text-align: center;
+
+}
+.box4{
+    background: white;
+    background-image: url(../image/illustrationSoldes4.jpg);
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.logo{
+    height: 3.2vw;
+    width: 4.5vw;
+     background-image: url(../image/V%20Studio%20Logo%20WHITE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin: 1vw 1vw;
+}
+
+.navi1{
+
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: black;
+     box-shadow: 0 17px 5px grey;
+}
+.mainMenu{
+    display: flex;
+    list-style: none;
+
+}
+.mainMenu li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+}
+.mainMenu li a:hover{
+     background-color:
+#323232;
+    color: var(--color1);
+    transition: 1s ease;
+}
+.active{
+    background: black;
+    color: var(--color1);
+}
+
+.openMenu{
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    background: white;
+}
+.closeMenu{
+     font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+h1{
+    font-family: var(--primary-font);
+    font-size: 60px;
+    margin: .5vw;
+}
+.vs{
+    color: white;;
+      font-size: 70px;
+}
+h3{
+    font-family: var(--primary-font);
+}
+.bttn{
+    display: inline-block;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    font-family: var(--primary-font);
+    margin: .5vw;
+    transition: 0.5s all;
+}
+.bttn:hover{
+ opacity: 0.5;
+
+}
+.text{
+    margin: 100px 20px;
+}
+
+@media(max-width: 920px){
+    .mainMenu{
+        height: 50vh;
+        position: fixed;
+        top: -16px;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--color2);
+        transition: top 1s ease;
+        display: none;
+    }
+    .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .openMenu{
+        display: block;
+
+    }
+    .mainMenu li a:hover{
+     background-color: #111;
+    color: white;
+    transition: 1s ease;
+        font-size: 1.6rem;
+}
+    .logo{
+        height: 11vw;
+        width: 13vw;
+        margin-top: 4vw;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+    margin: 50px 20px;
+
+}
+    .side-img{
+        width: 95vw;
+    height: 97vw;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 2fr));
+
+    }
+    .tc{
+        font-size: 21px;
+    }
+}

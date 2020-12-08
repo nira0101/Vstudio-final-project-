@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Montserrat:wght@200&family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-font: 'Julius Sans One', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+    --color1: #FFFF00;
+    --color2: #DCDCDC
+}
+
+.navi1 {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color2);
+}
+
+.logo {
+
+    height: 11vw;
+    width: 13vw;
+    margin-top: 3vw;
+    background-image: url(../image/Logo%20V%20Studio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.mainMenu {
+    display: flex;
+    list-style: none;
+    height: 50vh;
+    margin: 0;
+    position: fixed;
+    top: -16px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color2);
+    transition: top 1s ease;
+    display: none;
+
+}
+
+.mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    color: black;
+    font-size: 13px;
+}
+
+.mainMenu li a:hover {
+    background-color: #111;
+    color: white;
+    transition: 1s ease;
+
+}
+
+.openMenu {
+    font-size: 1.5rem;
+    margin: 20px;
+    display: block;
+    cursor: pointer;
+
+}
+
+.closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+
+
+/*for tablet*/
+@media only screen and (min-width: 768px) {
+
+
+    .logo {
+        height: 9vw;
+        width: 9vw;
+        margin: .5vw 2vw;
+    }
+
+    .navi1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mainMenu {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        height: 9vw;
+        width: 80%;
+        background: var(--color2);
+        margin: 3.5vw 18.4vw;
+
+    }
+
+    .mainMenu li a {
+        display: inline-block;
+        padding: 15px;
+        text-decoration: none;
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        color: black;
+        ;
+        font-size: 13px;
+    }
+
+    .mainMenu li a:hover {
+        background-color:
+            #323232;
+        color: var(--color1);
+        transition: 1s ease;
+    }
+
+
+
+    .openMenu {
+        display: none;
+    }
+
+    .closeMenu {
+        display: none;
+    }
+}
+
+
+/*for desktop*/
+@media only screen and (min-width: 1000px) {
+
+
+    .logo {
+        background-image: url(../image/Logo%20V%20Studio.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: relative;
+        height: 5vw;
+        width: 7vw;
+        margin: 1vw 1.5vw;
+    }
+
+    .navi1 {
+        width: 10%;
+        flex-direction: column;
+        justify-content: space-between;
+        background: var(--color2);
+    }
+
+    .mainMenu {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        height: 40vw;
+        width: 10%;
+        background: var(--color2);
+        margin: 9.1vw .6vw;
+        align-items: flex-start;
+
+    }
+
+    .mainMenu li a {
+        display: inline-block;
+        padding: 20px;
+        text-decoration: none;
+        font-family: var(--primary-font);
+        text-transform: uppercase;
+        color: black;
+        ;
+        font-size: 16px;
+
+        position: relative;
+        top: -1vw;
+        right: 3vw;
+    }
+
+    .mainMenu li a:hover {
+        background-color:
+            #323232;
+        color: var(--color1);
+        transition: 1s ease;
+    }
+
+
+    .openMenu {
+        display: none;
+    }
+
+    .closeMenu {
+        display: none;
+    }
+}
